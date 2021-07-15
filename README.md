@@ -1,2 +1,7 @@
-# goLearning
-my project to learn go
+# Kitex Examples
+
+## Build
+
+```bash
+docker build -t kitex-examples .
+```
