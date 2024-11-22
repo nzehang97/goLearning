@@ -38,5 +38,12 @@ func main() {
 		}
 		log.Println(resp)
 		time.Sleep(time.Second)
+		addReq := &api.AddRequest{First: 1, Second: 2}
+		addrResp, err := client.Add(context.Background(), addReq)
+		if err != nil {
+			log.Fatal(err)
+		}
+		log.Println(addrResp)
+		time.Sleep(time.Second)
 	}
 }
